@@ -22,7 +22,7 @@ export const getAllQuizesMetadata = async (req: express.Request, res: express.Re
 // * GET Quiz by id
 
 export const getQuizById = async (req: express.Request, res: express.Response) => {
-
+  
     try {
         let { id } = req.params
         if(!id){
@@ -30,11 +30,12 @@ export const getQuizById = async (req: express.Request, res: express.Response) =
         }
 
         const Quiz = await getQuizByIdDb(id)
+        
         if(!Quiz){
             return res.status(400).send('Not found')
         }
 
-        return res.status(200).send()
+        return res.status(200).send(Quiz)
 
     } catch (error) {
         return res.status(500).send(error)

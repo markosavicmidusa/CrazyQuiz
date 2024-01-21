@@ -1,4 +1,5 @@
 import express from 'express';
+import quizes from './quizes';
 
 
 // #region Setup
@@ -8,6 +9,7 @@ const router = express.Router();
 
 const getRouter = ():express.Router => {
     console.log('router is created')
+    quizes(router)
     return router
 }
 
