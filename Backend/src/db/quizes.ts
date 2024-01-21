@@ -29,4 +29,4 @@ const QuizSchema = new mongoose.Schema({
 const Quiz = mongoose.model('Quiz',QuizSchema)
 
 // * Fetch quiz by ID
-export const getQuizById = (quizId: string) => Quiz.findById(quizId);
+export const getQuizByIdDb = (quizId: string) => Quiz.findById(quizId);

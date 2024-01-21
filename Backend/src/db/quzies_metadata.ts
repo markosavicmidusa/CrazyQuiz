@@ -9,5 +9,5 @@ const QuizMetadataSchema = new mongoose.Schema({
 const QuizMetadata = mongoose.model('QuizMetadata', QuizMetadataSchema)
 
 // Fetch all quizzes
-export const getAllQuizzes = () => QuizMetadata.find();
+export const getAllQuizzesMetadataDb = () => QuizMetadata.find();
 
