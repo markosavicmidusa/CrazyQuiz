@@ -44,7 +44,7 @@ if (MONGO_URL_LOCAL) {
   console.error('MongoDB URL is undefined. Connection not established.');
 }
 
-
+// adding router
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello, this is your Express app with TypeScript!');
 });
