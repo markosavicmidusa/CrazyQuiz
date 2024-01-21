@@ -1,5 +1,5 @@
 // src/index.ts
-import express, { Request, Response } from 'express';
+import express, { Request, Response, Router } from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -7,7 +7,7 @@ import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import http from 'http'
-
+import getRouter from './router';
 
 
 // #region Setup
@@ -23,6 +23,8 @@ app.use(cors({
 app.use(compression())
 app.use(cookieParser())
 app.use(bodyParser.json())
+
+const router = getRouter()
 // #endregion
 
 
@@ -45,6 +47,4 @@ if (MONGO_URL_LOCAL) {
 }
 
 // adding router
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, this is your Express app with TypeScript!');
-});
+app.use('/', router)
