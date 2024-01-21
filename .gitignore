@@ -1,1 +1,3 @@
+# Backend Excludes
+/Backend/.env
 /Backend/node_modules/
