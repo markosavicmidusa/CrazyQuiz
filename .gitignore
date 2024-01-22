@@ -5,36 +5,36 @@
 # Frontend Excludes
 
 # dependencies
-/Frontend/crazy-quiz/node_modules
-/Frontend/crazy-quiz/.pnp
-/Frontend/crazy-quiz/pnp.js
-/Frontend/crazy-quiz/.yarn/install-state.gz
+/frontend/node_modules
+/frontend/.pnp
+/frontend/pnp.js
+/frontend/.yarn/install-state.gz
 
 # testing
-/Frontend/crazy-quiz/coverage
+/frontend/coverage
 
 # next.js
-/Frontend/crazy-quiz/.next
-/Frontend/crazy-quiz/out
+/frontend/.next
+/frontend/out
 
 # production
-/Frontend/crazy-quiz/build
+/frontend/build
 
 # misc
-/Frontend/crazy-quiz/.DS_Store
-/Frontend/crazy-quiz/*.pem
+/frontend/.DS_Store
+/frontend/*.pem
 
 # debug
-/Frontend/crazy-quiz/npm-debug.log*
-/Frontend/crazy-quiz/yarn-debug.log*
-/Frontend/crazy-quiz/yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
 
 # local env files
-/Frontend/crazy-quiz/.env*.local
+/frontend/.env*.local
 
 # vercel
-/Frontend/crazy-quiz/.vercel
+/frontend/.vercel
 
 # typescript
-/Frontend/crazy-quiz/*.tsbuildinfo
-/Frontend/crazy-quiz/next-env.d.ts
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts

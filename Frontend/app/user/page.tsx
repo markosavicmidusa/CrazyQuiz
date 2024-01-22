@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Home: React.FC = () => {
+const User: React.FC = () => {
   return (
     <main>
-      main
+      user
     </main>
   );
 };
 
-export default Home;
+export default User;

@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
   return (
     <main>
-      main
+      about
     </main>
   );
 };
 
-export default Home;
+export default About;
