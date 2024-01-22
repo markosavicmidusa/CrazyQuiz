@@ -1,3 +1,40 @@
 # Backend Excludes
 /Backend/.env
 /Backend/node_modules/
+
+# Frontend Excludes
+
+# dependencies
+/Frontend/crazy-quiz/node_modules
+/Frontend/crazy-quiz/.pnp
+/Frontend/crazy-quiz/pnp.js
+/Frontend/crazy-quiz/.yarn/install-state.gz
+
+# testing
+/Frontend/crazy-quiz/coverage
+
+# next.js
+/Frontend/crazy-quiz/.next
+/Frontend/crazy-quiz/out
+
+# production
+/Frontend/crazy-quiz/build
+
+# misc
+/Frontend/crazy-quiz/.DS_Store
+/Frontend/crazy-quiz/*.pem
+
+# debug
+/Frontend/crazy-quiz/npm-debug.log*
+/Frontend/crazy-quiz/yarn-debug.log*
+/Frontend/crazy-quiz/yarn-error.log*
+
+# local env files
+/Frontend/crazy-quiz/.env*.local
+
+# vercel
+/Frontend/crazy-quiz/.vercel
+
+# typescript
+/Frontend/crazy-quiz/*.tsbuildinfo
+/Frontend/crazy-quiz/next-env.d.ts
